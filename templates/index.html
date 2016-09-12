@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="jumbotron">
+			<div class="container">
+				{% if forecast %}
+					<h1>{{ forecast }}</h1>
+					<a href="{{ url_for('index') }}">Look up another address</a>
+				{% else %}
+					<h1>Hello! Where do you live?</h1>
+					<form action="/" class="form-inline">
+						<div class="form-group">
+							<input type="text" name="address" placeholder="City, State" class="form-control">
+						</div>
+						<input type="submit" value="Submit" class="btn btn-primary">
+					</form>
+				{% endif %}
+				<a href="{{ url_for('about') }}">About this project</a>
+			</div>
+		</div>
+	</body>
+</html>

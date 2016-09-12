@@ -1,0 +1,12 @@
+rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Welcome to my One Month Python project</h1>
+				<p>My name is Inimary Toby and I'm starting out as a developer. I am learning and building new projects for <a href="http://onemonth.com/courses/one-month-python">One Month Python</a>.</p>
+				<a href="{{ url_for('index') }}">Back to homepage</a>
+			</div>
+		</div>
+	</body>
+</html>
